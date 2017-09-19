@@ -1,0 +1,21 @@
+<!-- This is a testing project following the tutorial from A-Fram: https://aframe.io/blog/arjs/ -->
+
+<script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+  <!-- <a-scene embedded arjs='sourceType: webcam;'>
+    <a-box position='0 0.5 0' material='opacity: 0.5; side: double'>
+      <a-torus-knot radius='0.26' radius-tubular='0.05'>
+        <a-animation attribute="rotation" to="360 0 0" dur="3000" easing='linear' repeat="indefinite"></a-animation>
+      </a-torus-knot>
+    </a-box>
+    <a-marker-camera preset='hiro'></a-marker-camera>
+  </a-scene> -->
+
+  <a-scene embedded artoolkit='sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+    <a-marker type='barcode' value='5'>
+      <a-box position='0 0.5 0' material='color: blue;'></a-box>
+    </a-marker>
+</a-scene>
+
+</body>

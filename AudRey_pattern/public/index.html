@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+
+  <title>tracking.js - bounding box with camera</title>
+
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="assets/demo.css">
+
+  <script src="lib/tracking-min.js"></script>
+   <script src="../node_modules/dat.gui/build/dat.gui.min.js"></script>
+  <script src="assets/stats.min.js"></script>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="demo-title">
+    <p><a href="http://trackingjs.com" target="_parent">tracking.js</a> － Click and drag to select the area to be tracked</p>
+  </div>
+
+  <div id="boundingBox"></div>
+
+  <div class="demo-frame">
+    <div class="demo-container">
+      <video id="video" width="393" height="295" preload autoplay loop muted controls></video>
+      <canvas id="canvas" width="800" height="530"></canvas>
+  </div>
+</div>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
